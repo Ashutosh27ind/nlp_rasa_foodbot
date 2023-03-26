@@ -78,6 +78,44 @@ This repo contains training data and script files necessary to compile and execu
 - **endpoints.yml** contains the webhook configuration for custom action
 - **smtpconfig.txt** contains SMTP server configuration information (_If using GMAIL, setup account and generate app password_) .
 
+## Usage 
+
+### To Invoke Chatbot in Rasa Shell
+
+#### In Terminal 1: 
+```bash
+rasa run actions
+```
+
+#### In Terminal 2: 
+```bash
+rasa shell
+````
+
+### To Invoke Rasa NLU Shell
+
+```bash
+rasa shell nlu
+```
+
+### To Train the Model: (trains both nlu and core and saves the model in models folder)
+
+```bash 
+python3 rasa_train.py
+```
+
+MODEL FILE is saved in models folder: (models/restaurant_rasa_model.tar.gz)
+
+NOTE: Both nlu and core model are saved inside one model file, i.e models/restaurant_rasa_model.tar.gz
+
+### To Validate NLU Model Accuracy: (Classification report saved to results/intent_report.json)
+
+    * DEFAULT : separate test set is created
+    * VALIDATION : uses cross - validation
+
+```bash python3 nlu_test.py --type DEFAULT```
+
+```bash python3 nlu_test.py --type VALIDATION```
 
 
    
