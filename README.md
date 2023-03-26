@@ -1,7 +1,7 @@
 # nlp_rasa_foodbot
 A rasa open source chatbot that takes user queries and returns the best restaurants in the area using Zomato API
 
-## Update 26-March-2023 
+### Update 26-March-2023 
 Zomato has stopped the support for the API, hence this solution might not work anymore.  
 https://twitter.com/zomatocare/status/1391288230818029571?s=21 
 
