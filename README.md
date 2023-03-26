@@ -1,13 +1,16 @@
 # nlp_rasa_foodbot
 A rasa open source chatbot that takes user queries and returns the best restaurants in the area using Zomato API
 
+## Update 26-March-2023 
+Zomato has stopped the support for the API, hence this solution might not work anymore.  
+https://twitter.com/zomatocare/status/1391288230818029571?s=21 
+
 ## Pre-requisites
 
 - python 3.7.0
 - rasa 1.3.9
 - spacy 2.1.4
 - en_core_web_md 2.1.0
-
 
 ## Installation
 
